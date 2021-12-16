@@ -37,7 +37,7 @@ export default function userAuthenticated(
             firstName,
             lastName
         };
-
+        
         return next();
     } catch {
         throw new AppError('token JWT inválido', 401);

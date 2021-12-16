@@ -11,7 +11,6 @@ export default class PixController {
         const {value} = req.body;
         const user = req.user
 
-
         const requestKey = await pixService.request(value, user);
         return res.status(200).send({copyPasteKey: requestKey})
     }
