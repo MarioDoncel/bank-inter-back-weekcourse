@@ -14,12 +14,8 @@ createConnection().then(connection => {
     app.use(express.urlencoded({extended: true}));
     app.use(express.json())
 
-
     app.use(cors())
 
-
-    // CONFIGURANDO PASTA PUBLIC
-    // app.use(express.static('public'));
 
     // INSERINDO ROTAS
     app.use(routes);
