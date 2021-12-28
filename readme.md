@@ -142,15 +142,19 @@ Finished.
 
 ### ROUTES
 
-### User
-    * /user/signup -> Create and return an user 
-    * /user/signin -> Lod in and respond a JWT
-    * /user/me -> Check JWT and returns the user
+- ### User
+  #### Post
+      * /user/signup -> Create and return an user 
+      * /user/signin -> Lod in and respond a JWT
+  #### Get
+      * /user/me -> Check JWT and returns the user
 
- ### Pix
-    * /pix/transactions -> Show all transactions
-    * /pix/request -> Generate a simulated PIX key for transfer
-    * /pix/pay/:key -> Transfer amount according to the simulated PIX key
+- ### Pix
+  #### Get
+      * /pix/transactions -> Show all transactions
+  #### Post
+      * /pix/request -> Generate a simulated PIX key for transfer
+      * /pix/pay/:key -> Transfer amount according to the simulated PIX key
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
